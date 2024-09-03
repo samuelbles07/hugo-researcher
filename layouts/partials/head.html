@@ -21,7 +21,7 @@
     {{ end -}}
 
     {{- if not hugo.IsServer -}}
-        {{- partial "googleanalytics.html" . -}}
+        {{ template "_internal/google_analytics.html" . }}
     {{- end -}}
 
     {{ if .Params.noindex -}}
